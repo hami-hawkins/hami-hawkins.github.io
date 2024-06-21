@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Hamahuna - Javascript / DOM</title>
+  </head>
+  <body>
+    <h1>Javascript & DOM</h1>
+    <hr />
+    <p>
+      By now we have a basic understanding of HTML (the content of our page) and
+      the CSS (the styling of our page), but surprise! - there's a secret third
+      thing we need to talk about, and that is Javascript.
+    </p>
+    <p>
+      In simpler terms, imagine we're wanting to record a song. If the lyrics
+      and song structure are the HTML, and the musicians with their instruments
+      are the CSS, then Javascript is the producer in the studio using its
+      specialised know-how to give the track some "oomph". It can isolate
+      elements within the song, completely change others, amongst other things.
+    </p>
+    <p>
+      Let's dig a bit further into some of those special abilities only
+      Javascript can provide.
+    </p>
+    <hr />
+    <h4>Control Flow & Loops</h4>
+    <p>
+      Computers like order, and that is essentially all that Control Flow is: it
+      is the order in which our computer reads any script we give it. Starting
+      from line 1 it will progress through our script executing any and all
+      commands or statements until it reaches the final line... unless we tell
+      it to do something different, that is! So what does that look like?
+    </p>
+    <p>
+      One such example is what is known as a loop. Loops are exactly what they
+      sound like - a chain of commands that will repeat, until such a time as we
+      tell them to stop.
+    </p>
+    <p>
+      Imagine you're hosting 4 friends and offer to get everyone a glass of
+      water. A loop in this instance would look something like:
+    </p>
+    <img src="/images/loop-demo.png" class="center" />
+    <p>
+      We start with no glasses of water, and know we need four glasses so we can
+      stop once we have that many. Each time we fill a glass up, our count will
+      increase by one. The loop will repeat this process until we have four
+      glasses, and then everyone can hydrate (so they don't dydrate!)
+    </p>
+    <hr />
+    <h4>What the hell is the DOM?</h4>
+    <p>
+      Think of the Document Object Model (DOM) as the central nervous system for
+      your webpage. Look at the diagram below to see what a (very) basic DOM
+      might look like:
+    </p>
+    <img src="/images/dom-eg.png" class="center" />
+    <p>
+      Our document is the webpage, and all the little nodes that make up our
+      webpage anchor back to this. Because of this, we are able to use the DOM
+      to find and manipulate each individual node in whatever way we want - we
+      can even change how a node renders on our webpage, without touching the
+      CSS file!
+    </p>
+    <p>
+      For example, say we want to change all our p nodes to render with red
+      text. To do this we could use the following code:
+    </p>
+    <img src="/images/dom-manip-test.png" class="center" />
+    <p>
+      What is happening here is we are asking the document to find and select
+      ALL p elements, and changing the style of these p elements to red.
+    </p>
+    <p>
+      It is worth noting that if we had not specified querySelector<b>All</b>,
+      only the first p element would have been changed. Be specific, y'all!
+    </p>
+    <hr />
+    <h4>Arrays and Objects</h4>
+    <p>Arrays can be understood as a ordered list of items, written like so:</p>
+    <p style="text-align: center; color: rgb(194, 149, 0)">
+      ['Lay', 'These', 'Foolish', 'Ambitions', 'To', 'Rest']
+    </p>
+    <p>
+      One unique thing about how arrays work is that the first entry is not [1]
+      but [0] - because coders are silly and like to start counting from zero,
+      apparently... for now, let's just pretend that's a normal thing to do.
+    </p>
+    <p>
+      With that understood, we can see that [0] is "Lay", [1] is "These", [2] is
+      "Foolish", and so on.
+    </p>
+    <p>
+      Objects, on the other hand, are like a container of information, which we
+      call key-value pairs. Below is an example of an object for collecting my
+      contact details. See if you can identify what part is the key and what is
+      the value!
+    </p>
+    <img src="/images/object-eg.png" class="center" style="width: 20%" />
+    <p>
+      If you guessed that the key is things like
+      <em>name, preferred, age,</em> and <em>phone</em>, you'd be correct! As
+      such, the information next to them is the value. Say I had several other
+      contact details and I wanted to know everyones preferred name, I could
+      call on the key-values of these objects to get that information. This is
+      great as it is much faster than combing through the code myself - work
+      smarter, not harder!
+    </p>
+    <hr />
+    <h4>Functions</h4>
+    <p>
+      Why write the same bit of code over and over if you don't have to?
+      Ultimately this is the purpose of functions.
+    </p>
+    <p>
+      If we know we are going to need our code to run something multiple times,
+      we can simply write a function for it and call it whenever we need it
+      later on down the line. This also means if our function bugs out for
+      whatever reason, we are only having to change a single function rather
+      than the same one in several different lines of code...
+    </p>
+    <img src="/images/bugs.jpg" class="center img-border" style="width: 20%" />
+    <p>So yeah, just do it once and call on it again later, alright bestie?</p>
+    <hr />
+  </body>
+  <footer>
+    <a href="/index.html"><h4>Back to Home</h4></a>
+  </footer>
+</html>
