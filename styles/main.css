@@ -62,10 +62,20 @@ ul {
   margin: 0;
 }
 
-li {
+.li-link {
   display: inline;
   padding: 0px 20px 0px 20px;
   font-size: 2vw;
+}
+
+ol {
+  color: rgb(199, 199, 199);
+  padding: 0% 30% 0% 30%;
+}
+
+.li-blog {
+  font-size: 3vmin;
+  text-align: left;
 }
 
 footer {
@@ -105,6 +115,17 @@ hr {
   text-align: center;
 }
 
+.quote {
+  padding: 2% 30% 0 30%;
+  color: rgb(194, 149, 0);
+}
+
+.quote-sub {
+  padding: 0% 30% 2% 30%;
+  color: rgb(194, 149, 0);
+  text-align: right;
+}
+
 a:link {
   color: rgb(199, 199, 199);
   background-color: transparent;
@@ -127,4 +148,24 @@ a:hover {
   color: rgb(255, 0, 0);
   background-color: transparent;
   text-decoration: none;
+}
+
+.row .column {
+  float: left;
+  margin: 20px;
+  width: 20%;
+  color: rgb(199, 199, 199);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
