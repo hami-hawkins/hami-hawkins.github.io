@@ -37,7 +37,7 @@ h3 {
   text-align: center;
   text-decoration: underline;
   font-size: 3vw;
-  margin: 0% 10%;
+  margin: 0% 5%;
 }
 
 h4 {
@@ -63,7 +63,6 @@ ul {
 }
 
 .li-link {
-  display: inline;
   padding: 0px 20px 0px 20px;
   font-size: 2vw;
 }
@@ -150,22 +149,20 @@ a:hover {
   text-decoration: none;
 }
 
-.row .column {
-  float: left;
-  margin: 20px;
-  width: 20%;
-  color: rgb(199, 199, 199);
+.row {
+  display: flex;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: '';
-  display: table;
-  clear: both;
+.column {
+  flex: 50%;
 }
 
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
+}
+
+.in-line {
+  display: inline;
 }
